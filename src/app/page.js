@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex-1 bg-mauve-800 p-4 rounded-md min-h-75">
           <Skills />
         </div>
-        <div className="flex-1 bg-mauve-800 rounded-md min-h-75">
+        <div className="flex-1 bg-mauve-800 rounded-md min-h-75 w-2/3">
           <Projects />
         </div>
       </div>

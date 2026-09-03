@@ -176,7 +176,7 @@ const Projects = () => {
                 </div>
 
                 {/* Card grid — 2 cols on sm, 3 on lg */}
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 ">
                     {activeProjects.map((value) => (
                         <div
                             key={value.id}
@@ -233,12 +233,13 @@ const Projects = () => {
                                         Backend
                                     </Link>
                                 )}
+                                {!value.frontendUrl && !value.backendUrl && (
+                                    <div className="block text-center text-sm font-medium text-gray-400 bg-gray-100 py-2 flex-1">
+                                        Link Coming Soon
+                                    </div>
+                                )}
                             </div>
-                            ) : (
-                            <div className="block text-center text-sm font-medium text-gray-400 bg-gray-100 py-2">
-                                Link Coming Soon
-                            </div>
-                            )
+
                         </div>
                     ))}
                 </div >

@@ -45,7 +45,8 @@ const Skills = () => {
             <div className="flex flex-col gap-2">
                 <h3 className="text-2xl text-orange-300 mt-2">About Me</h3>
                 <p className="text-lg mt-2">
-                    Aspiring software and cloud engineer, with hand on learing experience in MERN STACK development, Linux, Networking, cloud computing and cybersecurity and DevOps fundamentals
+                    Aspiring software and cloud engineer, with hand on learing experience in MERN STACK development, Linux, Networking,
+                    cloud computing and cybersecurity,
                     with knowledge in building web applications using modern technologies and application deployment.
                     I have a entry level foundation in JavaScript, React, Node.js, MongoDb.
                 </p>
