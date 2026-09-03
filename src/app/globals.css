@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: oklch(17.099% 0.08372 287.072);
+  --foreground: #f0e2e2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-outfit-sans);
+  --font-mono: var(--font-outfit-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +22,55 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: outfit, sans-serif;
+}
+
+.animated-box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.animated-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ffff00);
+  animation: rotate 4s linear infinite;
+  z-index: 1;
+}
+
+.animated-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset: 4px;
+  background: var(--background);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  color: var(--foreground);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
