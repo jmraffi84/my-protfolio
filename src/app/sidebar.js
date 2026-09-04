@@ -17,7 +17,7 @@ const Sidebar = () => {
                     alt="resume image"
                     width={150}
                     height={150}
-                    className="w-full max-w-xs  object-cover rounded-full mx-auto md:mx-0 md:ml-4 mb-4 mt-2"
+                    className="w-full max-w-xs  object-cover  rounded-full h-80 mx-auto md:mx-0 md:ml-4 mb-4 mt-2"
                 />
                 <span className="text-2xl mt-3 ml-3 text-center underline md:text-left">
                     Mohammed Raffi Jeelani
