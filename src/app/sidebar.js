@@ -31,7 +31,7 @@ const Sidebar = () => {
                     <FaRegEnvelope size={20} /> <span className="text-xl text-white  ml-3">jmraffi@gmail.com</span>
                 </span>
                 <span className="flex text-2xl text-orange-300 mt-2 ml-3">
-                    <FaAddressCard size={30} /> <span className="text-xl text-white ml-3">5/3, Puthu thambi second street Anagaputhur chennai 600 070</span>
+                    <FaAddressCard size={30} /> <span className="text-xl text-white ml-3">Anagaputhur, Chennai 600 070</span>
                 </span>
                 <div className="flex flex-col mt-4 ml-2 mb-4">
                     <span className="text-2xl text-orange-300 mt-2">Professional Links:</span>

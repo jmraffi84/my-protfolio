@@ -79,30 +79,19 @@ const myProjects = [
     },
     {
         "id": 7,
-        "category": "Full stack",
+        "category": "Order Form",
         "name": "Form input and display Project",
         "description": "This form gets the input and display the data in UI.",
-        "tech": "React js",
+        "tech": "HTML|CSS|JS",
         "Css": "Bootstrap Css",
         "Database": "False",
         "frontendUrl": "https://starlit-medovik-bf3a40.netlify.app/",
         "backendUrl": "",
 
     },
+
     {
         "id": 8,
-        "category": "Full stack",
-        "name": "Form Input and Display data",
-        "description": "This form gets the input and display the data in UI.",
-        "tech": "React js",
-        "Css": "Bootstrap Css",
-        "Database": "False",
-        "frontendUrl": "https://starlit-medovik-bf3a40.netlify.app/",
-        "backendUrl": "",
-
-    },
-    {
-        "id": 9,
         "category": "Full stack",
         "name": "Youtube design in UI ",
         "description": "This show the UI of the Youtube design with the pagination.",
@@ -114,7 +103,7 @@ const myProjects = [
 
     },
     {
-        "id": 10,
+        "id": 9,
         "category": "Full stack",
         "name": "Events Booking",
         "description": "This app is help in booking the seat for the events .",
@@ -125,7 +114,7 @@ const myProjects = [
 
     },
     {
-        "id": 11,
+        "id": 10,
         "category": "Full stack",
         "name": "Shortnen Url",
         "description": "A simple url shortening service built with React and Node.js.",

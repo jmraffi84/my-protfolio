@@ -17,17 +17,17 @@ const education = [
     {
         institution: "Kaashiv Infotech",
         detail: "Cybersecurity, Cloud Computing, Networking, Linux",
-        year: "2026",
+
     },
     {
         institution: "GUVI (IIT-M Incubated, Madras)",
         detail: "Full Stack Development (MERN STACK)",
-        year: "2024",
+
     },
     {
         institution: "SRM Institute",
         detail: "Diploma in Hotel Management & Catering Technology",
-        year: "2004",
+
     },
 
 ];
@@ -45,15 +45,16 @@ const Skills = () => {
             <div className="flex flex-col gap-2">
                 <h3 className="text-2xl text-orange-300 mt-2">About Me</h3>
                 <p className="text-lg mt-2">
-                    Aspiring software and cloud engineer, with hand on learing experience in MERN STACK development, Linux, Networking,
-                    cloud computing and cybersecurity,
-                    with knowledge in building web applications using modern technologies and application deployment.
-                    I have a entry level foundation in JavaScript, React, Node.js, MongoDb.
+                    Aspiring <strong className="text-blue-500">Software and Cloud Engineer</strong> with hands-on experience in MERN stack development, Linux, networking, cloud computing, and cybersecurity.
+                    Skilled in building web applications using modern technologies, with a working knowledge of application deployment.
+                    Entry-level foundation in JavaScript, React, Node.js, and MongoDB,
+                    backed by a strong drive to grow across software development, cloud, and security domains.
                 </p>
                 <p className="text-lg mt-2">
-                    Seeking an entry level opputunity as a <strong className='text-cyan-300' >Junior Sofware Engineer, Cloud Support Enginner.</strong>
-                    I am a team player and enjoy collaborating with others to create innovative solutions.
-                    I am always eager to learn and take on new challenges in the ever-evolving field of cybersecurity and software development.
+                    Seeking an opportunity as a <strong className="text-blue-500">Junior Software Engineer, Cloud Support Engineer, Network Engineer, or Cybersecurity Analyst.</strong>
+                    A collaborative team player who enjoys working with others to build innovative solutions,
+                    and someone who is always eager to learn and take on new challenges in the ever-evolving fields of software development,
+                    cloud computing, and cybersecurity.
                 </p>
             </div>
             <div className="flex flex-col gap-2 mt-4 ">
@@ -75,7 +76,6 @@ const Skills = () => {
                         <tr >
                             <th className="text-xl text-left md:tracking-wide text-mist-400">Institution</th>
                             <th className="text-xl text-left md:tracking-wide text-mist-400 ">Detail</th>
-                            <th className="text-xl text-left md:tracking-wide text-mist-400">Year</th>
                         </tr>
                     </thead>
                     <tbody>
