@@ -22,7 +22,7 @@ const Sidebar = () => {
                 <span className="text-2xl mt-3 ml-3 text-center underline md:text-left">
                     Mohammed Raffi Jeelani
                 </span>
-                <span className="text-xl text-white mt-3 mb-3 ml-3">Cybersecurity | MERN Stack Developer | Linux | Networking | Cloud Computing</span>
+                <span className="text-xl text-white mt-3 mb-3 ml-3"> MERN Stack Developer | Networking | Linux | Cloud Computing | Cybersecurity </span>
 
                 <span className="flex text-2xl text-orange-300 mt-2 ml-3">
                     <FaPhone size={20} /> <span className="text-xl text-white ml-3">+91 8939326407</span>

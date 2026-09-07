@@ -147,9 +147,9 @@ const Projects = () => {
                 <h3 className="text-2xl text-orange-300 mt-2 text-center">Projects</h3>
             </div>
 
-            <div className="w-full max-w-4xl px-6 py-4">
+            <div className="w-full max-w-4xl px-6 py-4 sm:w-full">
                 {/* Category tabs */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-1 mb-6 ">
                     {categories.map((list, idx) => (
                         <button
                             key={idx}

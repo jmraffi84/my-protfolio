@@ -59,7 +59,7 @@ const Skills = () => {
             </div>
             <div className="flex flex-col gap-2 mt-4 ">
                 <h2 className="text-2xl text-orange-300 mt-4">Technology Skill Set:</h2>
-                <div className="flex flex-wrap gap-2  mt-2 ">
+                <div className="flex flex-wrap gap-2  mt-2 sm:w-full">
                     {Myskills.map((skill, index) => (
                         <div className="bg-mauve-700 text-white px-4 py-2 rounded-md animated-box" key={index}>
                             <p className="content uppercase">
