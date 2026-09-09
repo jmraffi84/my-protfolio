@@ -25,8 +25,8 @@ const education = [
 
     },
     {
-        institution: "SRM Institute",
-        detail: "Diploma in Hotel Management & Catering Technology",
+        institution: "SRM University",
+        detail: " Hotel Management & Catering Technology",
 
     },
 
@@ -89,31 +89,57 @@ const Skills = () => {
                     </tbody>
                 </table>
             </div>
-            <div className="flex flex-col mt-4 ml-2 mb-4" >
-                <span className="text-2xl text-orange-300 mt-2 ">Personal Details:</span>
-                <table className="table-auto mt-3 ml-3 text-white table-responsive block lg:flex-row">
-                    <thead >
-                        <tr >
-                            <th className="text-xl  text-left md:tracking-wide md:w-sm text-mist-400">Languages</th>
-                            <th className="text-xl  text-left md:tracking-wide md:w-sm text-mist-400">Nationality</th>
-                            <th className="text-xl  text-left md:tracking-wide md:w-sm text-mist-400">Martial</th>
-                            <th className="text-xl  text-left md:tracking-wide md:w-sm text-mist-400">Passort</th>
+            <div className="flex flex-col md:flex-row md:items-start text-sm border-b border-gray-800 pb-4 md:border-0 md:pb-0 font-sans">
+                {/* Heading Section */}
+                <span className="text-2xl text-orange-300 mt-2 font-bold whitespace-nowrap ">
+                    Personal Details:
+                </span>
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {personaDetails.map((item, idx) => (
-                            <tr key={idx} className="mb-3 mt-3">
-                                <td className="text-lg ">{item.Languages}</td>
-                                <td className="text-lg ">{item.Nationality}</td>
-                                <td className="text-lg ">{item['Martial ']}</td>
-                                <td className="text-lg ">{item.Passport}</td>
+                {/* Details Container */}
+                <div className="flex flex-col mt-4 ml-2 mb-4 md:ml-6 text-white w-full">
+                    {personaDetails.map((item, idx) => (
+                        <div key={idx}>
+                            <ul className="space-y-3 sm:hidden p-4 rounded-lg border border-gray-800">
+                                <li className="flex justify-between border-b  pb-2">
+                                    <span className="text-gray-400 font-medium">Languages:</span>
+                                    <span className="text-lg font-semibold text-right">{item.Languages}</span>
+                                </li>
+                                <li className="flex justify-between border-b pb-2">
+                                    <span className="text-gray-400 font-medium">Nationality:</span>
+                                    <span className="text-lg font-semibold text-right">{item.Nationality}</span>
+                                </li>
+                                <li className="flex justify-between border-b  pb-2">
+                                    <span className="text-gray-400 font-medium">Marital Status:</span>
+                                    <span className="text-lg font-semibold text-right">{item['Martial ']}</span>
+                                </li>
+                                <li className="flex justify-between pb-1">
+                                    <span className="text-gray-400 font-medium">Passport:</span>
+                                    <span className="text-lg font-semibold text-right">{item.Passport}</span>
+                                </li>
+                            </ul>
 
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-
+                            {/* DESKTOP VIEW: Clean horizontal table layout (Visible on screens 640px and up) */}
+                            <table className="hidden sm:table table-auto w-full max-w-4xl">
+                                <thead>
+                                    <tr>
+                                        <th className="text-xl text-left tracking-wide pb-2 w-1/4 text-gray-400 font-semibold">Languages</th>
+                                        <th className="text-xl text-left tracking-wide pb-2 w-1/4 text-gray-400 font-semibold">Nationality</th>
+                                        <th className="text-xl text-left tracking-wide pb-2 w-1/4 text-gray-400 font-semibold">Marital</th>
+                                        <th className="text-xl text-left tracking-wide pb-2 w-1/4 text-gray-400 font-semibold">Passport</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td className="text-lg py-1">{item.Languages}</td>
+                                        <td className="text-lg py-1">{item.Nationality}</td>
+                                        <td className="text-lg py-1">{item['Martial ']}</td>
+                                        <td className="text-lg py-1">{item.Passport}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    ))}
+                </div>
             </div>
 
 
